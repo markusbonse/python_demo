@@ -7,9 +7,10 @@ name = "python_demo"
 version = "0.1.0"
 description = "A simple Python demo package"
 requires-python = ">=3.8"
-dependencies = [
-    "numpy",
-]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools.packages.find]
 where = ["."]
