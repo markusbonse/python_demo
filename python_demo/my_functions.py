@@ -1,4 +1,5 @@
-def special_function_final(x, y):
+
+def special_function_final(x: float | int, y: float | int,) -> float | int:
     """Return x squared plus y.
 
     Parameters
